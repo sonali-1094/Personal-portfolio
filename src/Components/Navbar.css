@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform:scale(1.05);
+    
+}
+
+.nav-menu li {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #1e40af; /* blue-800 */
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
