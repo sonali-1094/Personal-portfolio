@@ -37,7 +37,6 @@
   margin-top: 10px;
 }
 
-
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -55,4 +54,51 @@
 
 .footer-icon:hover {
   color: #2563eb;
+}
+
+/* ----------------------------- */
+/* ✅ Responsive Media Query    */
+/* ----------------------------- */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-email-input input {
+    width: 100%;
+  }
+
+  .footer-subcriber {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-right p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .footer-bottom-left {
+    font-size: 14px;
+  }
 }

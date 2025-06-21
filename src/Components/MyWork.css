@@ -68,3 +68,40 @@
   background-image: linear-gradient(45deg, #3f0028, #582300);
   transform: scale(1.05);
 }
+
+/* ------------------------------------- */
+/* ✅ Responsive Styling for Mobile 📱 */
+/* ------------------------------------- */
+@media (max-width: 768px) {
+  .mywork {
+    margin: 40px 20px;
+    padding: 2rem 1rem;
+    gap: 40px;
+  }
+
+  .mywork-title h1 {
+    font-size: 2rem;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .mywork-card {
+    padding: 1rem;
+  }
+
+  .mywork-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .mywork-card p {
+    font-size: 0.9rem;
+  }
+
+  .mywork-links a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

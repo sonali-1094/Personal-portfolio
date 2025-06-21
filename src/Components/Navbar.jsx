@@ -1,43 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   return (
     <div className='navbar'>
-      <ul className="nav-menu">
+      <div className="nav-logo">Portfolio</div>
+
+      <ul className={isMobile ? 'nav-menu-mobile' : 'nav-menu'}>
         <li>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Home
-          </NavLink>
+          <NavLink to="/" onClick={() => setIsMobile(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-            About Me
-          </NavLink>
+          <NavLink to="/about" onClick={() => setIsMobile(false)} className={({ isActive }) => (isActive ? 'active' : '')}>About Me</NavLink>
         </li>
         <li>
-          <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Services
-          </NavLink>
+          <NavLink to="/services" onClick={() => setIsMobile(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Services</NavLink>
         </li>
         <li>
-          <NavLink to="/work" className={({ isActive }) => (isActive ? 'active' : '')}>
-            My Work
-          </NavLink>
+          <NavLink to="/work" onClick={() => setIsMobile(false)} className={({ isActive }) => (isActive ? 'active' : '')}>My Work</NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Contact
-          </NavLink>
+          <NavLink to="/contact" onClick={() => setIsMobile(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>
         </li>
-       
       </ul>
 
-      {/* You can link to Contact or any page here */}
-      <NavLink to="/footer" className="nav-connect">
-        Connect With Me
-      </NavLink>
+      <div className="nav-connect">
+        <NavLink to="/contact">Connect With Me</NavLink>
+      </div>
+
+      <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? '✕' : '☰'}
+      </button>
     </div>
   );
 };

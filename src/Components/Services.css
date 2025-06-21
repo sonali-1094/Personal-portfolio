@@ -1,4 +1,4 @@
-.services{
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,15 +6,18 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.services-title{
+
+.services-title {
     position: relative;
 }
-.services-title h1{
+
+.services-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
-.services-format{
+
+.services-format {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,17 +28,20 @@
     transition: 0.4s;
     cursor: pointer;
 }
-.services-container{
+
+.services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 80px;
 }
-.services-format h3{
+
+.services-format h3 {
     font-size: 28px;
     font-weight: 600;
 }
-.services-format h2{
+
+.services-format h2 {
     font-size: 38px;
     font-weight: 800;
     background: linear-gradient(270deg, #DF8908 50%, #B414FF 100%);
@@ -43,21 +49,70 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.services-format p{
+
+.services-format p {
     color: #d4d4d4;
     font-size: 24px;
     line-height: 40px;
     max-width: 300px;
 }
-.services-readmore{
+
+.services-readmore {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 20px;
 }
-.services-format:hover{
+
+.services-format:hover {
     border: 2px solid #ff00ff;
-    background-image: linear-gradient(45deg,#3f0028,#582300);
+    background-image: linear-gradient(45deg, #3f0028, #582300);
     transform: scale(1.05);
     transition: 0.4s;
+}
+
+/* ---------------------------------- */
+/* ✅ Responsive Media Query (Mobile) */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+    .services {
+        margin: 40px 20px;
+        gap: 50px;
+    }
+
+    .services-title h1 {
+        font-size: 40px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .services-format {
+        padding: 30px;
+    }
+
+    .services-format h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .services-format h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .services-format p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .services-readmore {
+        justify-content: center;
+    }
 }
