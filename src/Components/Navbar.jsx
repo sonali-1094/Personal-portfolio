@@ -27,9 +27,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="nav-connect">
-        <NavLink to="/contact">Connect With Me</NavLink>
-      </div>
+      
 
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? '✕' : '☰'}

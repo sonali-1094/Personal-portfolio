@@ -30,6 +30,37 @@ const MyWork_Data = [
     description: "A plaform where kids learn coding through game.",
     githubLink: "https://github.com/sonali-1094/Gamified-coding-platform.git"
   },
+  {
+    id: 5,
+    title: "Edusity react App",
+    description: "Developed a responsive and modern e-learning platform using React.",
+    githubLink: "https://github.com/sonali-1094/Edusity-react.git",
+  },
+  {
+    id: 6,
+    title: "Youtube Clone",
+    description: "Built a functional YouTube clone using React.js, replicating core features like video search, playback, and responsive UI design",
+    githubLink: "https://github.com/sonali-1094/youtube-clone.git",
+  },
+  {
+    id: 7,
+    title: "News Mag react",
+    description: "Developed a responsive and modern News platform using React.",
+    githubLink: "https://github.com/sonali-1094/News-Mag-react.git",
+  },
+  {
+    id: 8,
+    title: "QuickCart",
+    description: "Developed a responsive to product,orders E-Commerce platform using Nextjs.",
+    githubLink: "https://github.com/sonali-1094/News-Mag-react.git",
+  },
+   {
+    id: 9,
+    title: "Todolist App",
+    description: "A todolist App using Javascript.",
+    githubLink: "https://github.com/sonali-1094/Todolist-app.git",
+  },
+
 ];
 
 export default MyWork_Data;

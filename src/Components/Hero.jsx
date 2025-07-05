@@ -19,14 +19,9 @@ const Hero = () => {
         </Link>
 
         {/* Open resume PDF */}
-        <a
-          href="/public/Sonali Patil Resume Latest.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hero-resume"
-        >
-          My Resume
-          
+        
+        < a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+         My Resume
         </a>
       </div>
     </div>
